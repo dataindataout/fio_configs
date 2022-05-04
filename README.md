@@ -39,4 +39,11 @@ mkdir gcc_9_2_0_release-build
 cd gcc_9_2_0_release-build/
 
 ../gcc_9_2_0_release/configure && make -j 16 && sudo make install && echo "finished"
+
+git clone git://git.kernel.dk/fio.git
+cd fio
+./configure
+make
+sudo make install
+fio -version
 ```
