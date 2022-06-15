@@ -23,7 +23,7 @@ Generate graphs.
 
 Alternatively, look for values exceeding a certain level. This example shows the count of write latency entries over 10ms.
 
-`cat 4k-write-latency.results_lat.1.log | awk -F',' '$2>10000000 {print ;}' | wc -l`
+`cat 4k-write-lat-latency.results_lat.1.log | awk -F',' '$2>10000000 {print ;}' | wc -l`
 
 Note: The fio version installed from at least the Centos 7 packages is quite old. Here are some example steps to installing the latest fio version.
 
